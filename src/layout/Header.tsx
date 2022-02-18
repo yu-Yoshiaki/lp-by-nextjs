@@ -20,7 +20,7 @@ export const Header: VFC = () => {
           {items.map(({ href, label, icon }) => {
             return (
               <NavLink key={href} href={href} activeClassName="text-blue-500 ">
-                <a className="inline-block py-4 px-6 text-lg hover:bg-black hover:text-white">
+                <a className="inline-block py-4 px-6 text-lg hover:text-white hover:bg-black">
                   <div className="flex justify-between">
                     <div>{icon ?? ""}</div>
                     <div>{label}</div>
